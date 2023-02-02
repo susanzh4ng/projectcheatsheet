@@ -1,27 +1,9 @@
 # Project Cheat Sheet
 
-#### Git Workshop Overview: ####
-- [ ] Decide when to have weekly ArtI meetings
-- [ ] Installing Git ("git --version") and VS Code
-- [ ] Creating a GitHub account and adding members as collaborators
-- [ ] Access to the demo-repo respository
-- [ ] Creating your branch in demo-repo
-- [ ] Pushing your changes to demo-repo/your_branch
-- [ ] Pulling changes from partner_branch to your_branch
-- [ ] Pushing your changes to master_branch
-- [ ] Pulling from master_branch to your_branch
-- [ ] Access to the ArtI repository
-- [ ] Creating your branch in ArtI repo
-- [ ] Pushing your changes to ArtI/README
-
 
 
 ### Miscellaneous ###
-* PLEASE WORK ON SEPARATE FILES to avoid GitHub merge conflicts
-* When pushing your changes to GitHub, ALWAYS push to YOUR branch; you will push to master branch during our ArtI group meetings
-* Set up frontend routing BEFORE coding any UI
-* Check out [this video](https://youtu.be/RGOj5yH7evk) if you're completely lost in terms of Git commands
-* `rafce`-> to create the skeletons of components in React
+* `rafce` -> to create the skeletons of components in React
 
 
 ### Basic Git Commands ###
@@ -93,3 +75,16 @@
 * `npx create-react-app ./` within VS Code's terminal (VS code -> view -> terminal) in order to start the app
 * `npm start` to view on a local host
 * Good job :)
+
+
+
+### Server side of a MERN stack application ###
+* Create a new folder (titled "server") in the same folder that the front end of the web app is located in
+* `npm init`
+    * Keep hitting enter (this will be your package.json file)
+* `npm i express` -> installs express package (the most common tool for making servers; provides you with the basic tools and methods to initialize a server)
+* `npm i mongoose` -> a dependency that provides us with the method to make the model, so that you can see the schemas of mongoDB on the server side
+* `npm i body-parser` -> a middleware that checks out http requests that comes from the client side; that the data and http requests are valid to run on the server
+* `npm i nodemon` -> when we make any file changes and save them, this will automatically restart and update our server (we no longer have to do it manually)
+* `"start": "nodemon index.js"` -> add to your scripts in package.json; whenever we start our program in the terminal, it also starts index.js with the nodemon package
+* `"type": "module"` -> add before scripts in package.json; necessary for importing modules
